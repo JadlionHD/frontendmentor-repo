@@ -93,6 +93,11 @@ hr {
   font-size: 28px;
 }
 
+.title-gap {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
 .nutrition table {
   border-collapse: collapse;
   width: 100%;
@@ -111,6 +116,11 @@ hr {
 .nutrition .nutrition-value {
   color: hsl(14, 45%, 36%);
   font-weight: bold;
+}
+
+.nutrition .nutrition-subtitle {
+  font-size: 14px;
+  color: #908c88;
 }
 
 /* Mobile */
