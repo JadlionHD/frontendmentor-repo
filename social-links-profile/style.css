@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --primary-green: hsl(75, 94%, 57%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-grey: hsl(0, 0%, 20%);
+  --neutral-dark-grey: hsl(0, 0%, 12%);
+  --neutral-off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: var(--neutral-white);
+  background-color: var(--neutral-off-black);
+}
+
+.profile {
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 80px;
+  text-align: center;
+  background-color: var(--neutral-dark-grey);
+  padding: 32px;
+  border-radius: 8px;
+}
+
+.profile-picture img {
+  border-radius: 50%;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 16px 0;
+}
+
+.location {
+  color: var(--primary-green);
+  font-weight: 500;
+  margin: 16px 0;
+}
+
+.job {
+  color: #adadad;
+  margin: 16px 0;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: var(--neutral-white);
+  background-color: var(--neutral-grey);
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: 0.4s ease-in-out;
+}
+
+.socials a:hover {
+  background-color: var(--primary-green);
+  color: var(--neutral-off-black);
+  transition: 0.4s ease-in-out;
+}
+
+@media only screen and (max-width: 425px) {
+  .profile {
+    width: 260px;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .profile {
+    width: 220px;
+  }
+}
