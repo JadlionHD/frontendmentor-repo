@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: hsl(30, 54%, 90%);
+  color: hsl(24, 5%, 18%);
+  font-size: 16px;
+}
+
+ul {
+  padding-left: 16px;
+  margin-left: 16px;
+  list-style-type: disc;
+}
+
+ol {
+  padding-left: 16px;
+  margin-left: 16px;
+}
+
+ol li::marker {
+  font-size: 16px;
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+
+li {
+  padding: 6px 10px;
+}
+
+li::marker {
+  font-size: 12px;
+}
+
+hr {
+  margin: 32px 0;
+}
+
+.color-dark-rasp {
+  color: hsl(14, 45%, 36%);
+}
+
+.container {
+  background-color: #ffffff;
+  max-width: 600px;
+  padding: 32px;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border-radius: 20px;
+}
+
+.hero img {
+  border-radius: 20px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 500;
+  padding: 16px 0;
+  color: hsl(24, 5%, 18%);
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #908c88;
+  margin-bottom: 32px;
+}
+
+.prepare {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 20px;
+  padding: 32px;
+  margin-bottom: 32px;
+}
+
+.prepare-title {
+  color: hsl(332, 51%, 32%);
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.prepare li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+.title-size {
+  font-size: 28px;
+}
+
+.nutrition table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.nutrition td {
+  padding: 16px;
+  border-color: #908c88;
+  border-style: solid;
+  border-width: 1px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.nutrition .nutrition-value {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: white;
+  }
+
+  .hero img {
+    max-width: 100%;
+    width: 768px;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .container {
+    padding: 0;
+    margin-top: 0;
+    border-radius: 0;
+  }
+
+  .text-content {
+    padding: 16px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    background-color: white;
+  }
+
+  .hero img {
+    border-radius: 0;
+  }
+
+  .text-content {
+    padding: 16px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    font-size: 12px;
+  }
+
+  .hero img {
+    border-radius: 0;
+  }
+
+  .text-content {
+    padding: 16px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .hero img {
+    border-radius: 0;
+  }
+}
