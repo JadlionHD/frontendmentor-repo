@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-pink: hsl(275, 100%, 97%);
+  --gray-purple: hsl(292, 16%, 49%);
+  --dark-purple: hsl(292, 42%, 14%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  background-color: var(--light-pink);
+}
+
+.pattern {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(images/background-pattern-desktop.svg);
+  height: 340px;
+}
+
+.card {
+  width: 500px;
+  background-color: var(--white);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 32px;
+  border-radius: 10px;
+}
+
+.title {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  font-weight: 800;
+  font-size: 64px;
+}
+
+.accordion-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-header {
+  color: var(--dark-purple);
+  font-weight: 600;
+  border: 1px solid #c5c5c5;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.accordion-header:hover {
+  color: #ad28eb;
+  transition: all 0.3s ease-in-out;
+}
+
+.accordion-header.active::after {
+  content: url(images/icon-minus.svg);
+  float: right;
+}
+
+.accordion-header::after {
+  content: url(images/icon-plus.svg);
+  float: right;
+}
+
+.accordion-header:hover {
+  cursor: pointer;
+  user-select: none;
+}
+
+.accordion-content {
+  color: var(--gray-purple);
+  opacity: 0.95;
+  display: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 300px;
+    font-size: 14px;
+  }
+  .pattern {
+    background-image: url(images/background-pattern-mobile.svg);
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .card {
+    font-size: 14px;
+    width: 240px;
+  }
+}
