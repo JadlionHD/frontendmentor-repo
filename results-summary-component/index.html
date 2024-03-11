@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="result">
+          <div class="result-title">Your Result</div>
+          <div class="result-score">
+            <div class="result-total-score">76</div>
+            <div class="result-max-score">of 100</div>
+          </div>
+          <div class="result-content">
+            <div class="result-content-title">Great</div>
+            <div class="result-content-description">
+              You scored higher than 65% of the people who have taken these tests
+            </div>
+          </div>
+        </div>
+
+        <div class="summary">
+          <div class="summary-title">Summary</div>
+
+          <div class="summary-content">
+            <div class="summary-score">
+              <div
+                class="summary-item"
+                style="background-color: var(--primary-transparent-light-red)"
+              >
+                <img src="assets/images/icon-reaction.svg" alt="Category" />
+                <div class="category-item" style="color: var(--primary-light-red)">Reaction</div>
+                <div class="category-score">
+                  <span class="category-total-score">80</span>
+                  <span class="category-max-score">/ 100</span>
+                </div>
+              </div>
+
+              <div
+                class="summary-item"
+                style="background-color: var(--primary-transparent-orangey-yellow)"
+              >
+                <img src="assets/images/icon-memory.svg" alt="Category" />
+                <div class="category-item" style="color: var(--primary-orangey-yellow)">Memory</div>
+                <div class="category-score">
+                  <span class="category-total-score">92</span>
+                  <span class="category-max-score">/ 100</span>
+                </div>
+              </div>
+
+              <div
+                class="summary-item"
+                style="background-color: var(--primary-transparent-green-teal)"
+              >
+                <img src="assets/images/icon-verbal.svg" alt="Category" />
+                <div class="category-item" style="color: var(--primary-green-teal)">Verbal</div>
+                <div class="category-score">
+                  <span class="category-total-score">61</span>
+                  <span class="category-max-score">/ 100</span>
+                </div>
+              </div>
+
+              <div
+                class="summary-item"
+                style="background-color: var(--primary-transparent-cobalt-blue)"
+              >
+                <img src="assets/images/icon-visual.svg" alt="Category" />
+                <div class="category-item" style="color: var(--primary-cobalt-blue)">Visual</div>
+                <div class="category-score">
+                  <span class="category-total-score">72</span>
+                  <span class="category-max-score">/ 100</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="summary-btn">
+            <button class="summary-submit">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
