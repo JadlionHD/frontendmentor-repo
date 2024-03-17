@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <script src="assets/script.js"></script>
+
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" style="display: block">
+        <div class="star">
+          <img src="images/icon-star.svg" alt="star" />
+        </div>
+
+        <div class="text-content">
+          <div class="title">How did we do?</div>
+          <div class="subtitle">
+            Please let us know how we did with your support request. All feedback is appreciated to
+            help us improve our offering!
+          </div>
+        </div>
+
+        <div class="rate-score">
+          <div class="rate" data-rating="1" onclick="handleRating(this)">1</div>
+          <div class="rate" data-rating="2" onclick="handleRating(this)">2</div>
+          <div class="rate" data-rating="3" onclick="handleRating(this)">3</div>
+          <div class="rate" data-rating="4" onclick="handleRating(this)">4</div>
+          <div class="rate" data-rating="5" onclick="handleRating(this)">5</div>
+        </div>
+
+        <div class="submit" onclick="scoreSubmit()">Submit</div>
+      </div>
+
+      <div class="thank-you" style="display: none">
+        <div class="hero">
+          <img src="images/illustration-thank-you.svg" alt="Phone" />
+        </div>
+        <div class="selected">You selected <span class="selected-score">?</span> out of 5</div>
+
+        <div class="thank-text-content">
+          <div class="thank-title">Thank you!</div>
+          <div class="thank-subtitle">
+            We appreciate you taking the time to give a rating. If you ever need more support, don’t
+            hesitate to get in touch!
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
